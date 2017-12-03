@@ -1,6 +1,6 @@
 #!/bin/bash
 ###
-# "SystemC Runner" v.1.2
+# "SystemC Runner" v.1.2.1
 # USAGE: type the name of directory with SystemC code; take on input only one argument.
 ###
 name=$1
@@ -78,7 +78,7 @@ if [[ ! -f "out" ]]
   exit
   else
   echo -e "\e[1;4;32m=====BUILDING SUCCESS=====\e[0m"
-  mv out ../scout\($name\)\#$(date +%d).$(date +%m).$(date +%y)_$(date +%H).$(date +%M).$(date +%S).exe
+  mv out ../scout\($name\)\#$(date +%d).$(date +%m).$(date +%y)_$(date +%H).$(date +%M).$(date +%S)
   echo -e "\n\e[1;34m   SystemC output file is nearby!\e[0m"
   cd ..
   echo -e -n "\e[1;34m   ==> \e[0;32m"
